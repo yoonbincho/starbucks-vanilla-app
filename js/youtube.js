@@ -17,9 +17,10 @@ var tag = document.createElement('script');
             playlist: 'An6LvWQuj_8' // 반복 재생할 유튜브 영상 ID 목록
           },
           events: {
-              onReady: function(event){
-                  event.terget.mute()
-              }
+            // 영상이 준비되었을 때,
+            onReady: function (event) {
+              event.target.mute() // 음소거!
+            }
           }
-        });
+        })
       }
